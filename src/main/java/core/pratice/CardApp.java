@@ -1,11 +1,9 @@
 package core.pratice;
 
-import core.pratice.Card.Card;
-import core.pratice.Card.CardService;
-import core.pratice.Card.CardServiceImpl;
-import core.pratice.Card.Series;
-
-import java.util.Arrays;
+import core.pratice.card.Card;
+import core.pratice.card.CardService;
+import core.pratice.card.CardServiceImpl;
+import core.pratice.card.Series;
 
 public class CardApp {
     public static void main(String[] args) {

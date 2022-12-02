@@ -1,4 +1,4 @@
-package core.pratice.Card;
+package core.pratice.card;
 
 public class CardServiceImpl implements CardService{
 

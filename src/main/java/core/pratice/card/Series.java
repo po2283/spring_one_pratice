@@ -1,4 +1,4 @@
-package core.pratice.Card;
+package core.pratice.card;
 
 //카드의 종류 enum
 public enum Series {

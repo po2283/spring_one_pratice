@@ -1,4 +1,4 @@
-package core.pratice.Card;
+package core.pratice.card;
 
 //카드 서비스 인터페이스
 //CardRepository와 다른 점 -> CardRepository는 card를 받아서 저장소에 넣고 가지고 오는 인터페이스
