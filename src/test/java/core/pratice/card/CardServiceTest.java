@@ -1,9 +1,5 @@
 package core.pratice.card;
 
-import core.pratice.Card.Card;
-import core.pratice.Card.CardService;
-import core.pratice.Card.CardServiceImpl;
-import core.pratice.Card.Series;
 import static org.assertj.core.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 

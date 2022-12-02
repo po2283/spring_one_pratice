@@ -1,4 +1,4 @@
-package core.pratice.Card;
+package core.pratice.card;
 
 public interface CardRepository {
 

@@ -1,4 +1,4 @@
-package core.pratice.Card;
+package core.pratice.card;
 
 //카드의 기본 정보
 public class Card {
