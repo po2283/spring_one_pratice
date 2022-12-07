@@ -4,10 +4,20 @@ import core.pratice.card.Card;
 import core.pratice.card.CardService;
 import core.pratice.card.CardServiceImpl;
 import core.pratice.card.Series;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class CardApp {
     public static void main(String[] args) {
-        CardService cardService = new CardServiceImpl();
+
+        /*외부에서 주입해주는 AppConfig
+        AppConfig appConfig = new AppConfig();
+        appConfig에 있는 cardService를 사용하면 된다.*/
+
+        //스프링 사용
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
+        CardService cardService = applicationContext.getBean("cardService", CardService.class);
+
         Card card = new Card(1L, "cardA", Series.NEW_GENERATION);
         cardService.join(card);
 

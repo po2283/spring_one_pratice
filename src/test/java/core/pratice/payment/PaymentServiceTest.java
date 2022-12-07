@@ -1,14 +1,23 @@
 package core.pratice.payment;
 
+import core.pratice.AppConfig;
 import core.pratice.card.*;
 import org.assertj.core.api.ObjectAssert;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.*;
 
 public class PaymentServiceTest {
-    CardService cardService = new CardServiceImpl();
-    PaymentService paymentService = new PaymentServiceImpl();
+    CardService cardService;
+    PaymentService paymentService;
+
+    @BeforeEach
+    public void beforeEach(){
+        AppConfig appConfig = new AppConfig();
+        cardService = appConfig.cardService();
+        paymentService = appConfig.paymentService();
+    }
 
     @Test
     void createPayment(){
